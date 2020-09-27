@@ -1,0 +1,5 @@
+UI documentation and ideas.
+
+- No Mana
+- Spells, health and coins in bottom left corner of screen?
+

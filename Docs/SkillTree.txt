@@ -1,0 +1,21 @@
+Skill Tree documentation and ideas.
+
+- Skill tree is a card-based system
+- 3x3 layout
+- Each card needs to be bought or unlock with points during the game
+    - Level one cards cost 1
+    - Level two cards cost 3
+    - Level three cards cost 5
+    - Once you have reach the end of a card, you automatically unlock the next card slot
+- First level tree
+    - Warrior, Rogue, Mage
+- Second level tree
+    - (Warrior) Fire, Tank, Slash, Bash
+    - (Rogue) Stab, Shadow, Ice, Bow
+    - (Mage) Support, Physical, Lighting, Elementalist
+- Third level tree
+    - (warrior) Paladin(Tank/Bash), Pyro(Tank/Fire), Bruiser(Tank/Slash), Dervish(Fire/Slash), Earth Shatter(Fire/Bash)
+    - (Rogue) Disrupter(Shadow/Ice), Crit(Shadow/Stab), Ninja(Shadow/Bow), Shard(Ice,Bow), Dagger Throw(Stab/Bow)
+    - (Mage) Janna/Guardian(Support/Physical), Sorcesses/Debug(Support/Elementalist), Thunder(Lighting/Physical), Rakan/Shock(Support/Lighting), Archmage(Lighting/Elementalist)
+- Skill passive can be unlocked through challenges
+- Unlock Signature card each time you defeat the final boss 

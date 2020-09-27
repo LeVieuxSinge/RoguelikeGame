@@ -1,0 +1,21 @@
+Weapons documentation and ideas.
+
+- 2 to 4 modifiers for one hand
+- 3 to 5 modifiers for two hands
+- Modifiers are grouped in little clusters (ex. Burning includes Fire Damage, Ignite Chance, Ignite Damage, Ignite Duration)
+    - Burning
+    - Lucky
+- Weapons have an innate damage (3x stronger on two hands)
+    - Bash
+    - Slash
+    - Pierce
+    - Projectile
+    - Area
+    - Spell
+- Weapons have an elemental damage
+    - Physical
+    - Fire -> Ignite enemy
+    - Glitch (Lighting) -> Arc spread
+    - Ice ->Slow enemy
+    - Poison -> Poison 
+- One hand spells alternate weapon on animation

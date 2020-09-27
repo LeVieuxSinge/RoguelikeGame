@@ -1,0 +1,16 @@
+Gameplay documentation and ideas.
+
+- Monster difficulty increases as the game goes
+- Kill monster to get items
+- Kill boss or random monster in maps to get tokens
+- Each map has an ending portal that leads to a boss
+    - Once the boss is defeated, shops open and players can exchange tokens for weapons or spell cards
+- Tokens are used as ability point.
+- After a few maps (30-40 minutes of gameplay) you fight a more powerful boss
+    - After this fight you have two options
+        - Remove the boss's mask, which start a quick animation and loops to the beginning
+            - Players keep what they have
+            - Monster are brielfy modified
+        - Enter a back room to fight the final boss
+            - This fight ends the game and gives achievements. Its a way to truly test you build
+            - If you decide not to fight it, the door appears everytime you defeat a map's boss

@@ -1,0 +1,7 @@
+Characters documentation and ideas.
+
+- Enemy guard
+    - White coat
+    - Fighter: two blades
+    - Range: rifle
+    - Guard Dog
