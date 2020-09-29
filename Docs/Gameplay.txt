@@ -14,3 +14,4 @@ Gameplay documentation and ideas.
         - Enter a back room to fight the final boss
             - This fight ends the game and gives achievements. Its a way to truly test you build
             - If you decide not to fight it, the door appears everytime you defeat a map's boss
+- Need to kill a minimum amount of enemy for the end portal to spawn
