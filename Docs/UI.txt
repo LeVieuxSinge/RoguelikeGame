@@ -1,5 +1,12 @@
 UI documentation and ideas.
 
 - No Mana
-- Spells, health and coins in bottom left corner of screen?
-
+- Things to include : 
+	- Health
+	- Tokens
+	- 8 Ability Slots
+	- Inventory Button
+	- Spellbook Button
+	- Time
+	- Difficulty
+	- Pause Button
