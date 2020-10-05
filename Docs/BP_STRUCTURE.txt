@@ -1,0 +1,34 @@
+PlayerCharacter
+	Input Ability
+	On Health Changed -> Update Health -> Check if alive
+	Update Heath -> SetHp in Interface HUD
+	On damage receive -> Reaction Hit Animation
+	Low Health Screen Alert
+
+PlayerController
+	Input Action Pause / Options -> Pause game in GameInstance
+	Input Action Inventory
+	Input Action Spellbook
+	Play/Stop Cutscenes
+	On Possess -> Create HUD
+	Tick ->	Character Movement
+
+GameMode = Sets the rules
+	Select Cutscenes -> Play in PlayerController
+	Manage Timer (Why no game state?)
+	Start Game -> Respawn Player -> Start Timer
+	Restart Game
+	Game Over
+
+GameInstance = Manager class not destroyed between levels. Data can be stored.
+	Manage store items
+	Pause Game / Options Menu
+	Go to Main Menu Event -> Open Level Main Menu
+
+GameState = Replicated to everyone. Keeps data relative to the game.
+	Nothing
+
+PlayerState = Replicated to everyone. Holds every variable non-related to PlayerCharacter
+
+MainMenuGameMode
+	Create Menu Widget

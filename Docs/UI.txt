@@ -10,3 +10,4 @@ UI documentation and ideas.
 	- Time
 	- Difficulty
 	- Pause Button
+	- Map

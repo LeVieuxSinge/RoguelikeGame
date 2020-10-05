@@ -1,0 +1,7 @@
+- Drop item on death
+- Projectile Ability
+- In-Game UI prototype
+- Map generator + basic map prototype
+- Create a few abilities and auras
+
+- WB_AbilityButton is not completely copied from WB_InputButton
