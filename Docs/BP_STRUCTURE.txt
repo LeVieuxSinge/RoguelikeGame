@@ -26,7 +26,7 @@ GameInstance = Manager class not destroyed between levels. Data can be stored.
 	Go to Main Menu Event -> Open Level Main Menu
 
 GameState = Replicated to everyone. Keeps data relative to the game.
-	Nothing
+	Map creation
 
 PlayerState = Replicated to everyone. Holds every variable non-related to PlayerCharacter
 

@@ -4,6 +4,7 @@
 
 #include "RoguelikeGame.h"
 #include "GameFramework/GameStateBase.h"
+#include "Map/ProceduralMap.h"
 #include "RPGGameStateBase.generated.h"
 
 /** Base class for GameMode, should be blueprinted */
@@ -15,5 +16,8 @@ class ROGUELIKEGAME_API ARPGGameStateBase : public AGameStateBase
 public:
 	/** Constructor */
 	ARPGGameStateBase() {}
+
+	UPROPERTY(BlueprintReadOnly, Category = Map)
+	UProceduralMap* ProceduralMap;
 };
 
