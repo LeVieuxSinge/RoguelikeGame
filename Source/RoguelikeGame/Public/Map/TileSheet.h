@@ -5,12 +5,12 @@
 #include "Tile.h"
 #include "TileSheet.generated.h"
 
-USTRUCT()
+USTRUCT(Blueprintable)
 struct FTileSheet
 {
 	GENERATED_BODY()
 
-		/** Constructor */
+	/** Constructor */
 	FTileSheet()
 		: Rows(10)
 		, Columns(10)
@@ -19,24 +19,16 @@ struct FTileSheet
 		CreateTileSheet();
 	};
 
-	FTileSheet(int32 InRows, int32 InColumns, int32 InTileSize)
-		: Rows(InRows)
-		, Columns(InColumns)
-		, TileSize(InTileSize)
-	{
-		CreateTileSheet();
-	};
-
 	/** Rows */
-	UPROPERTY(EditAnywhere, Category = "Tile Sheet")
+	UPROPERTY(EditDefaultsOnly)
 	int32 Rows;
 
 	/** Columns */
-	UPROPERTY(EditAnywhere, Category = "Tile Sheet")
+	UPROPERTY(EditDefaultsOnly)
 	int32 Columns;
 
 	/** TileSize */
-	UPROPERTY(EditAnywhere, Category = "Tile Sheet")
+	UPROPERTY(EditDefaultsOnly)
 	int32 TileSize;
 
 	/** Output */

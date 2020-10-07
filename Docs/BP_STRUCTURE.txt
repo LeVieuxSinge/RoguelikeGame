@@ -32,3 +32,9 @@ PlayerState = Replicated to everyone. Holds every variable non-related to Player
 
 MainMenuGameMode
 	Create Menu Widget
+
+C++ Value vs Pointer vs Reference
+	- Value is used in function parameter. Modifications made to the value have no impact outside function.
+	- Reference used as alias in function parameter. Modifications made to the reference will have an impact
+	outside the function. Shares same memory address as original variable. Cannot be null.
+	- Pointer stores a memory address to be access later. Can be null.

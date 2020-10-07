@@ -16,6 +16,6 @@ Skill Tree documentation and ideas.
 - Third level tree
     - (warrior) Paladin(Tank/Bash), Pyro(Tank/Fire), Bruiser(Tank/Slash), Dervish(Fire/Slash), Earth Shatter(Fire/Bash)
     - (Rogue) Disrupter(Shadow/Ice), Crit(Shadow/Stab), Ninja(Shadow/Bow), Shard(Ice,Bow), Dagger Throw(Stab/Bow)
-    - (Mage) Janna/Guardian(Support/Physical), Sorcesses/Debug(Support/Elementalist), Thunder(Lighting/Physical), Rakan/Shock(Support/Lighting), Archmage(Lighting/Elementalist)
+    - (Mage) Janna/Guardian(Support/Physical), Sorcesses/Debuf(Support/Elementalist), Thunder(Lighting/Physical), Rakan/Shock(Support/Lighting), Archmage(Lighting/Elementalist)
 - Skill passive can be unlocked through challenges
 - Unlock Signature card each time you defeat the final boss 
