@@ -17,11 +17,4 @@ public:
 	/** Constructor */
 	ARPGGameStateBase() {}
 
-	UPROPERTY(EditDefaultsOnly, Category = "Map")
-	TSubclassOf<UProceduralMap> ProceduralMap;
-
-	UFUNCTION(BlueprintCallable)
-	void GenerateNewProceduralMap();
-
 };
-
