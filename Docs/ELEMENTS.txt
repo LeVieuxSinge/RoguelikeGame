@@ -1,0 +1,9 @@
+Elements documentation and ideas.
+
+- Names + Effects:
+	- (Physical -> None) = Physical
+ 	- (Fire -> Ignite) = Burn
+	- (Lighting -> Static) = Electric
+	- (Ice -> freeze/Burst Damage) = Cold
+	- (Poison -> Poison) = Virus
+	- (Confusion -> Confuse) = Hack

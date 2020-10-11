@@ -1,0 +1,6 @@
+Story documentation and ideas.
+
+- Lore can be obtain by a random encounter when you defeat a boss.
+	- This encounter does not always appear
+	- Can give you lore in style of comic books, say something random or you have the option to punch him
+- Dialogues are in the form of speech bubbles
