@@ -1,7 +1,6 @@
 PlayerCharacter
-	Input Ability
-	On Health Changed -> Update Health -> Check if alive
-	Update Heath -> SetHp in Interface HUD
+	Cast ability
+	On Health Changed -> Update Health (updates UI) -> Check if alive
 	On damage receive -> Reaction Hit Animation
 	Low Health Screen Alert
 
