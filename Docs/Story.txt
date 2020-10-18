@@ -4,3 +4,14 @@ Story documentation and ideas.
 	- This encounter does not always appear
 	- Can give you lore in style of comic books, say something random or you have the option to punch him
 - Dialogues are in the form of speech bubbles
+- Small fucker named *Steve/Kevin*:
+	- Is pro government
+	- Is there at the start
+		- You can punch him to get a random weapon OR *leave him to unlock a pugilist passive point
+	- *If you punch him everytime you see it you get the  pugilist class
+	- Randomly appears after any boss defeated
+		- You can punch him
+		- Can give you lore
+		- Tells shit
+		- Blast mixtape
+	- Narrator of the game

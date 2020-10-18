@@ -2,7 +2,7 @@ Gameplay documentation and ideas.
 
 - Monster difficulty increases as the game goes
 - Kill monster to get items
-- Kill boss or random monster in maps to get tokens
+- Kill boss or random monster / event in maps to get tokens
 - Each map has an ending portal that leads to a boss
     - Once the boss is defeated, shops open and players can exchange tokens for weapons or spell cards
 - Tokens are used as ability point.

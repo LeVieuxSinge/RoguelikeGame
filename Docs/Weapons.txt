@@ -6,10 +6,22 @@ Weapons documentation and ideas.
     - Burning
     - Lucky
 - Weapons have an innate damage (3x stronger on two hands)
-    - Bash
-    - Slash
-    - Pierce
-    - Projectile
-    - Area
-    - Spell
+    - Attack (Slash, Bash, Pierce)
+    - Spell (Projectile, Area)
 - One hand spells alternate weapon on animation
+
+- When weapon is spawn :
+	- Choose Weapon Type (Sword, Mace, Wand ...)
+	- Choose Elemental Type (Fire, Ice ...)
+	- Choose Damage Type (Slash, Bash ...)
+	- Choose Attack/Spell ability according to Elemental and Damage Type
+
+- Weapon Structure
+	- Mesh
+	- Name
+	- Tier
+	- Damage Type (innate)
+	- 1 elemental modifier (innate)
+	- 1 to 3 additionnal modifiers for one hand (2 to 4 for two hand)
+	- Ability
+	- Description / Quote (Legendary)
