@@ -7,3 +7,5 @@ Elements documentation and ideas.
 	- (Ice -> lag) = Freeze
 	- (Poison -> Poison) = Virus
 	- (Confusion -> Confuse) = Hack
+	- (Stun -> Stun) = Stun
+	- (Bleed -> Bleed) 

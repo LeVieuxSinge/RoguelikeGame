@@ -18,15 +18,15 @@ Skill Tree documentation and ideas.
 
 - Names:
 	- (Warrior) = Rebel
-	- (Warrior -> Fire) = Pyro*
-	- (Warrior -> Tank) = Heavy* Brave* (Colossus spell)
-	- (Warrior -> Slash) = Slicer* Swift* Gladiator* Champion* Slayer!*
+	- (Warrior -> Fire) = Pyro
+	- (Warrior -> Tank) = Colossus
+	- (Warrior -> Slash) = Slayer
 	- (Warrior -> Bash) = Bully
-	- (Warrior -> Tank/Bash) = Paladin* Charger* Savior* Guardian!*
-	- (Warrior -> Tank/Fire) = Anarchist!*
-	- (Warrior -> Tank/Slash) = Bruiser* Hero!* (Spell that lets you equip two hand in one hand)
-	- (Warrior -> Fire/Slash) = Dervish* Showmaker* "The Protagonist"*
-	- (Warrior -> Fire/Bash) = Earth Shatter* Destructor*
+	- (Warrior -> Tank/Bash) = Guardian
+	- (Warrior -> Tank/Fire) = Anarchist
+	- (Warrior -> Tank/Slash) = Hero
+	- (Warrior -> Fire/Slash) = "The Protagonist"
+	- (Warrior -> Fire/Bash) = Earth Shatter* Destructor* (last point : additonal ripple(s) for all bash attack)
 
 	- (Rogue) = Umbra
 	- (Rogue -> Stab) = Whisperer*
@@ -37,14 +37,14 @@ Skill Tree documentation and ideas.
 	- (Rogue -> Shadow/Stab) = Crit* Stalker* (studies his victims weaknesses)
 	- (Rogue -> Shadow/Bow) = Ninja* Gunner* Sharpshooter*
 	- (Rogue -> Ice/Bow) = Shard* Imploder* Salvager* (Throws arrow that slow a bit, after a moment, explodes and completly snares enemy) (Add projectile to freeze burst)
-	- (Rogue -> Stab/Bow) = Dagger Throw* Assassin*
+	- (Rogue -> Stab/Bow) = Dagger Throw* Assassin* (last point : create projectile holograms)
 
 	- (Mage) = Cypher
 	- (Mage -> Support) = Protector (Heals and gives buff)
 	- (Mage -> Physical) = Battle Mage* Geowire* Wired* (Close combat fighting with cyber wire)(no cd spells)
 	- (Mage -> Lighting) = Imploder* Killer* Snake* Spreader* Shortage*
 	- (Mage -> Elementalist) = Disorder* Discord*
-	- (Mage -> Support/Physical) = Angel
+	- (Mage -> Support/Physical) = Angel (reflect projectile)
 	- (Mage -> Support/Elementalist) = Sorcerer* Debuf* Warlock*
 	- (Mage -> Support/Lighting) = Netrunner (Acts as the spreader. Can run among multiple enemy and then drag them all towards the same point)
 	- (Mage -> Lighting/Physical) = Thunder* Tempest*
