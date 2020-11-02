@@ -264,15 +264,12 @@ float ARPGCharacterBase::GetMaxHealth() const
 	return AttributeSet->GetMaxHealth();
 }
 
-float ARPGCharacterBase::GetMana() const
+void ARPGCharacterBase::CalculateMaxHealth()
 {
-	return AttributeSet->GetMana();
+	AttributeSet->SetMaxHealth(((AttributeSet->GetMaxHealth_Initial() * AttributeSet->GetMaxHealth_Initial_Multiplier()) + AttributeSet->GetMaxHealth_Flat_Additive()) * (1.f + AttributeSet->GetMaxHealth_Increase_Multiplier()) * AttributeSet->GetMaxHealth_Exponential_Multiplier());
 }
 
-float ARPGCharacterBase::GetMaxMana() const
-{
-	return AttributeSet->GetMaxMana();
-}
+
 
 float ARPGCharacterBase::GetMoveSpeed() const
 {
@@ -394,13 +391,6 @@ void ARPGCharacterBase::HandleHealthChanged(float DeltaValue, const struct FGame
 	}
 }
 
-void ARPGCharacterBase::HandleManaChanged(float DeltaValue, const struct FGameplayTagContainer& EventTags)
-{
-	if (bAbilitiesInitialized)
-	{
-		OnManaChanged(DeltaValue, EventTags);
-	}
-}
 
 void ARPGCharacterBase::HandleMoveSpeedChanged(float DeltaValue, const struct FGameplayTagContainer& EventTags)
 {
@@ -412,3 +402,4 @@ void ARPGCharacterBase::HandleMoveSpeedChanged(float DeltaValue, const struct FG
 		OnMoveSpeedChanged(DeltaValue, EventTags);
 	}
 }
+

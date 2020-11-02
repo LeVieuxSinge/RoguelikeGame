@@ -8,9 +8,56 @@
 
 URPGAttributeSet::URPGAttributeSet()
 	: Health(1.f)
+	, MaxHealth_Initial(1.f)
+	, MaxHealth_Initial_Multiplier(1.f)
+	, MaxHealth_Flat_Additive(0.f)
+	, MaxHealth_Increase_Multiplier(0.f)
+	, MaxHealth_Exponential_Multiplier(1.f)
 	, MaxHealth(1.f)
-	, Mana(0.f)
-	, MaxMana(0.f)
+	, Damage_Initial(1.f)
+	, Damage_Initial_Multiplier(1.f)
+	, Damage_Increase_Multiplier(0.f)
+	, Damage_Exponential_Multiplier(1.f)
+	, AttackDamage_Initial(1.f)
+	, AttackDamage_Initial_Multiplier(1.f)
+	, AttackDamage_Increase_Multiplier(0.f)
+	, AttackDamage_Exponential_Multiplier(1.f)
+	, SpellDamage_Initial(1.f)
+	, SpellDamage_Initial_Multiplier(1.f)
+	, SpellDamage_Increase_Multiplier(0.f)
+	, SpellDamage_Exponential_Multiplier(1.f)
+	, PhysicalDamage_Initial(1.f)
+	, PhysicalDamage_Initial_Multiplier(1.f)
+	, PhysicalDamage_Increase_Multiplier(0.f)
+	, PhysicalDamage_Exponential_Multiplier(1.f)
+	, ElementalDamage_Initial(1.f)
+	, ElementalDamage_Initial_Multiplier(1.f)
+	, ElementalDamage_Increase_Multiplier(0.f)
+	, ElementalDamage_Exponential_Multiplier(1.f)
+	, FireDamage_Initial(1.f)
+	, FireDamage_Initial_Multiplier(1.f)
+	, FireDamage_Increase_Multiplier(0.f)
+	, FireDamage_Exponential_Multiplier(1.f)
+	, FreezeDamage_Initial(1.f)
+	, FreezeDamage_Initial_Multiplier(1.f)
+	, FreezeDamage_Increase_Multiplier(0.f)
+	, FreezeDamage_Exponential_Multiplier(1.f)
+	, ElectricDamage_Initial(1.f)
+	, ElectricDamage_Initial_Multiplier(1.f)
+	, ElectricDamage_Increase_Multiplier(0.f)
+	, ElectricDamage_Exponential_Multiplier(1.f)
+	, BashDamage_Initial(1.f)
+	, BashDamage_Initial_Multiplier(1.f)
+	, BashDamage_Increase_Multiplier(0.f)
+	, BashDamage_Exponential_Multiplier(1.f)
+	, SlashDamage_Initial(1.f)
+	, SlashDamage_Initial_Multiplier(1.f)
+	, SlashDamage_Increase_Multiplier(0.f)
+	, SlashDamage_Exponential_Multiplier(1.f)
+	, StabDamage_Initial(1.f)
+	, StabDamage_Initial_Multiplier(1.f)
+	, StabDamage_Increase_Multiplier(0.f)
+	, StabDamage_Exponential_Multiplier(1.f)
 	, AttackPower(1.0f)
 	, DefensePower(1.0f)
 	, MoveSpeed(1.0f)
@@ -23,9 +70,56 @@ void URPGAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Out
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(URPGAttributeSet, Health);
+	DOREPLIFETIME(URPGAttributeSet, MaxHealth_Initial);
+	DOREPLIFETIME(URPGAttributeSet, MaxHealth_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, MaxHealth_Flat_Additive);
+	DOREPLIFETIME(URPGAttributeSet, MaxHealth_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, MaxHealth_Exponential_Multiplier);
 	DOREPLIFETIME(URPGAttributeSet, MaxHealth);
-	DOREPLIFETIME(URPGAttributeSet, Mana);
-	DOREPLIFETIME(URPGAttributeSet, MaxMana);
+	DOREPLIFETIME(URPGAttributeSet, Damage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, Damage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, Damage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, Damage_Exponential_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, AttackDamage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, AttackDamage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, AttackDamage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, AttackDamage_Exponential_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, SpellDamage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, SpellDamage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, SpellDamage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, SpellDamage_Exponential_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, PhysicalDamage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, PhysicalDamage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, PhysicalDamage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, PhysicalDamage_Exponential_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, ElementalDamage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, ElementalDamage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, ElementalDamage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, ElementalDamage_Exponential_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, FireDamage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, FireDamage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, FireDamage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, FireDamage_Exponential_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, FreezeDamage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, FreezeDamage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, FreezeDamage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, FreezeDamage_Exponential_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, ElectricDamage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, ElectricDamage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, ElectricDamage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, ElectricDamage_Exponential_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, BashDamage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, BashDamage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, BashDamage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, BashDamage_Exponential_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, SlashDamage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, SlashDamage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, SlashDamage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, SlashDamage_Exponential_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, StabDamage_Initial);
+	DOREPLIFETIME(URPGAttributeSet, StabDamage_Initial_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, StabDamage_Increase_Multiplier);
+	DOREPLIFETIME(URPGAttributeSet, StabDamage_Exponential_Multiplier);
 	DOREPLIFETIME(URPGAttributeSet, AttackPower);
 	DOREPLIFETIME(URPGAttributeSet, DefensePower);
 	DOREPLIFETIME(URPGAttributeSet, MoveSpeed);
@@ -36,19 +130,254 @@ void URPGAttributeSet::OnRep_Health(const FGameplayAttributeData& OldValue)
 	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, Health, OldValue);
 }
 
+void URPGAttributeSet::OnRep_MaxHealth_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, MaxHealth_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_MaxHealth_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, MaxHealth_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_MaxHealth_Flat_Additive(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, MaxHealth_Flat_Additive, OldValue);
+}
+
+void URPGAttributeSet::OnRep_MaxHealth_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, MaxHealth_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_MaxHealth_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, MaxHealth_Exponential_Multiplier, OldValue);
+}
+
 void URPGAttributeSet::OnRep_MaxHealth(const FGameplayAttributeData& OldValue)
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, MaxHealth, OldValue);
 }
 
-void URPGAttributeSet::OnRep_Mana(const FGameplayAttributeData& OldValue)
+void URPGAttributeSet::OnRep_Damage_Initial(const FGameplayAttributeData& OldValue)
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, Mana, OldValue);
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, Damage_Initial, OldValue);
 }
 
-void URPGAttributeSet::OnRep_MaxMana(const FGameplayAttributeData& OldValue)
+void URPGAttributeSet::OnRep_Damage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, MaxMana, OldValue);
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, Damage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_Damage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, Damage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_Damage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, Damage_Exponential_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_AttackDamage_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, AttackDamage_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_AttackDamage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, AttackDamage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_AttackDamage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, AttackDamage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_AttackDamage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, AttackDamage_Exponential_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_SpellDamage_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, SpellDamage_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_SpellDamage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, SpellDamage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_SpellDamage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, SpellDamage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_SpellDamage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, SpellDamage_Exponential_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_PhysicalDamage_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, PhysicalDamage_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_PhysicalDamage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, PhysicalDamage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_PhysicalDamage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, PhysicalDamage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_PhysicalDamage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, PhysicalDamage_Exponential_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_ElementalDamage_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, ElementalDamage_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_ElementalDamage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, ElementalDamage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_ElementalDamage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, ElementalDamage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_ElementalDamage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, ElementalDamage_Exponential_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_FireDamage_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, FireDamage_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_FireDamage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, FireDamage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_FireDamage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, FireDamage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_FireDamage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, FireDamage_Exponential_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_FreezeDamage_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, FreezeDamage_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_FreezeDamage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, FreezeDamage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_FreezeDamage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, FreezeDamage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_FreezeDamage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, FreezeDamage_Exponential_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_ElectricDamage_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, ElectricDamage_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_ElectricDamage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, ElectricDamage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_ElectricDamage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, ElectricDamage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_ElectricDamage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, ElectricDamage_Exponential_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_BashDamage_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, BashDamage_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_BashDamage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, BashDamage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_BashDamage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, BashDamage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_BashDamage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, BashDamage_Exponential_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_SlashDamage_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, SlashDamage_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_SlashDamage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, SlashDamage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_SlashDamage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, SlashDamage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_SlashDamage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, SlashDamage_Exponential_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_StabDamage_Initial(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, StabDamage_Initial, OldValue);
+}
+
+void URPGAttributeSet::OnRep_StabDamage_Initial_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, StabDamage_Initial_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_StabDamage_Increase_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, StabDamage_Increase_Multiplier, OldValue);
+}
+
+void URPGAttributeSet::OnRep_StabDamage_Exponential_Multiplier(const FGameplayAttributeData& OldValue)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(URPGAttributeSet, StabDamage_Exponential_Multiplier, OldValue);
 }
 
 void URPGAttributeSet::OnRep_AttackPower(const FGameplayAttributeData& OldValue)
@@ -89,10 +418,7 @@ void URPGAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, f
 	{
 		AdjustAttributeForMaxChange(Health, MaxHealth, NewValue, GetHealthAttribute());
 	}
-	else if (Attribute == GetMaxManaAttribute())
-	{
-		AdjustAttributeForMaxChange(Mana, MaxMana, NewValue, GetManaAttribute());
-	}
+	
 }
 
 void URPGAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallbackData& Data)
@@ -196,17 +522,7 @@ void URPGAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallbac
 			TargetCharacter->HandleHealthChanged(DeltaValue, SourceTags);
 		}
 	}
-	else if (Data.EvaluatedData.Attribute == GetManaAttribute())
-	{
-		// Clamp mana
-		SetMana(FMath::Clamp(GetMana(), 0.0f, GetMaxMana()));
-
-		if (TargetCharacter)
-		{
-			// Call for all mana changes
-			TargetCharacter->HandleManaChanged(DeltaValue, SourceTags);
-		}
-	}
+	
 	else if (Data.EvaluatedData.Attribute == GetMoveSpeedAttribute())
 	{
 		if (TargetCharacter)
@@ -216,3 +532,4 @@ void URPGAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallbac
 		}
 	}
 }
+

@@ -4,6 +4,6 @@ Elements documentation and ideas.
 	- (Physical -> None) = Physical
  	- (Fire -> Ignite) = Burn
 	- (Lighting -> Static) = Electric
-	- (Ice -> freeze/Burst Damage) = Cold
+	- (Ice -> lag) = Freeze
 	- (Poison -> Poison) = Virus
 	- (Confusion -> Confuse) = Hack

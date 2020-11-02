@@ -41,7 +41,7 @@ Skill Tree documentation and ideas.
 
 	- (Mage) = Cypher
 	- (Mage -> Support) = Protector (Heals and gives buff)
-	- (Mage -> Physical) = Battle Mage* Geowire* Wired* (Close combat fighting with cyber wire)
+	- (Mage -> Physical) = Battle Mage* Geowire* Wired* (Close combat fighting with cyber wire)(no cd spells)
 	- (Mage -> Lighting) = Imploder* Killer* Snake* Spreader* Shortage*
 	- (Mage -> Elementalist) = Disorder* Discord*
 	- (Mage -> Support/Physical) = Angel

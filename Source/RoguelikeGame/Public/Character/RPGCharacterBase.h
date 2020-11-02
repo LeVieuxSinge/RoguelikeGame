@@ -39,13 +39,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	virtual float GetMaxHealth() const;
 
-	/** Returns current mana */
 	UFUNCTION(BlueprintCallable)
-	virtual float GetMana() const;
-
-	/** Returns maximum mana, mana will never be greater than this */
-	UFUNCTION(BlueprintCallable)
-	virtual float GetMaxMana() const;
+	void CalculateMaxHealth();
 
 	/** Returns current movement speed */
 	UFUNCTION(BlueprintCallable)
@@ -151,15 +146,6 @@ protected:
 	void OnHealthChanged(float DeltaValue, const struct FGameplayTagContainer& EventTags);
 
 	/**
-	 * Called when mana is changed, either from healing or from being used as a cost
-	 *
-	 * @param DeltaValue Change in mana value, positive for heal, negative for cost. If 0 the delta is unknown
-	 * @param EventTags The gameplay tags of the event that changed mana
-	 */
-	UFUNCTION(BlueprintImplementableEvent)
-	void OnManaChanged(float DeltaValue, const struct FGameplayTagContainer& EventTags);
-
-	/**
 	 * Called when movement speed is changed
 	 *
 	 * @param DeltaValue Change in move speed
@@ -190,7 +176,6 @@ protected:
 	// Called from RPGAttributeSet, these call BP events above
 	virtual void HandleDamage(float DamageAmount, const FHitResult& HitInfo, const struct FGameplayTagContainer& DamageTags, ARPGCharacterBase* InstigatorCharacter, AActor* DamageCauser);
 	virtual void HandleHealthChanged(float DeltaValue, const struct FGameplayTagContainer& EventTags);
-	virtual void HandleManaChanged(float DeltaValue, const struct FGameplayTagContainer& EventTags);
 	virtual void HandleMoveSpeedChanged(float DeltaValue, const struct FGameplayTagContainer& EventTags);
 
 	// Friended to allow access to handle functions above
