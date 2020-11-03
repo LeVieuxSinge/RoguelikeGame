@@ -26,18 +26,18 @@ Skill Tree documentation and ideas.
 	- (Warrior -> Tank/Fire) = Anarchist
 	- (Warrior -> Tank/Slash) = Hero
 	- (Warrior -> Fire/Slash) = "The Protagonist"
-	- (Warrior -> Fire/Bash) = Earth Shatter* Destructor* (last point : additonal ripple(s) for all bash attack)
+	- (Warrior -> Fire/Bash) = Wrecker
 
 	- (Rogue) = Umbra
-	- (Rogue -> Stab) = Whisperer*
+	- (Rogue -> Stab) = Whisperer
 	- (Rogue -> Shadow) = Penumbra
-	- (Rogue -> Ice) = Vanisher*
-	- (Rogue -> Bow) = Hunter*
-	- (Rogue -> Shadow/Ice) = Disrupter* (Smoke spell to aply slow, can than attack everyone he slowed)
-	- (Rogue -> Shadow/Stab) = Crit* Stalker* (studies his victims weaknesses)
-	- (Rogue -> Shadow/Bow) = Ninja* Gunner* Sharpshooter*
-	- (Rogue -> Ice/Bow) = Shard* Imploder* Salvager* (Throws arrow that slow a bit, after a moment, explodes and completly snares enemy) (Add projectile to freeze burst)
-	- (Rogue -> Stab/Bow) = Dagger Throw* Assassin* (last point : create projectile holograms)
+	- (Rogue -> Ice) = Tundra
+	- (Rogue -> Bow) = Hunter
+	- (Rogue -> Shadow/Ice) = Disrupter
+	- (Rogue -> Shadow/Stab) = Finisher (studies his victims weaknesses)
+	- (Rogue -> Shadow/Bow) = Hermit
+	- (Rogue -> Ice/Bow) = Imploder (Throws arrow that slow a bit, after a moment, explodes and completly snares enemy)
+	- (Rogue -> Stab/Bow) = Assassin (last point : create projectile holograms)
 
 	- (Mage) = Cypher
 	- (Mage -> Support) = Protector (Heals and gives buff)
