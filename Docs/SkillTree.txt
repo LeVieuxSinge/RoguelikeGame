@@ -11,7 +11,7 @@ Skill Tree documentation and ideas.
 - Unlock Signature card each time you defeat the final boss
 - Signature Card Idea:
 	- Pugilist (Unarmed) -> Tier 2 Warrior
-	- Hacker (Control/Confusion) -> Tier 3 Mage (you jump into the air and control enemies while in the air. You cannot attack and strings come out of your hands to connect to enemies)
+	- Hacker (Control/Confusion) -> Tier 3 Mage (Corrupted Mind: jump in the air and hack every enemy in an area, cannot move, hacked enemys attack non-hack enemy and take damage while hacked)
 	- Vagrant (Rarity/Money/Store Refresh) -> Tier 2 Rogue
 	- Sewer Guy (Virus) -> Tier 3 Rogue
 	- Goliath (Bigger Size)
@@ -34,18 +34,18 @@ Skill Tree documentation and ideas.
 	- (Rogue -> Ice) = Tundra
 	- (Rogue -> Bow) = Hunter
 	- (Rogue -> Shadow/Ice) = Disrupter
-	- (Rogue -> Shadow/Stab) = Finisher (studies his victims weaknesses)
-	- (Rogue -> Shadow/Bow) = Hermit
-	- (Rogue -> Ice/Bow) = Imploder (Throws arrow that slow a bit, after a moment, explodes and completly snares enemy)
-	- (Rogue -> Stab/Bow) = Assassin (last point : create projectile holograms)
+	- (Rogue -> Shadow/Stab) = Finisher
+	- (Rogue -> Shadow/Bow) = Shadower
+	- (Rogue -> Ice/Bow) = Imploder
+	- (Rogue -> Stab/Bow) = Assassin
 
 	- (Mage) = Cypher
-	- (Mage -> Support) = Protector (Heals and gives buff)
-	- (Mage -> Physical) = Battle Mage* Geowire* Wired* (Close combat fighting with cyber wire)(no cd spells)
-	- (Mage -> Lighting) = Imploder* Killer* Snake* Spreader* Shortage*
-	- (Mage -> Elementalist) = Disorder* Discord*
-	- (Mage -> Support/Physical) = Angel (reflect projectile)
+	- (Mage -> Support) = Protector
+	- (Mage -> Physical) = Battle Mage* Geowire* Wired*
+	- (Mage -> Lighting) = Spreader* Shortage*
+	- (Mage -> Elementalist) = Disorder* Discord* Caster*
+	- (Mage -> Support/Physical) = Angel
 	- (Mage -> Support/Elementalist) = Sorcerer* Debuf* Warlock*
-	- (Mage -> Support/Lighting) = Netrunner (Acts as the spreader. Can run among multiple enemy and then drag them all towards the same point)
-	- (Mage -> Lighting/Physical) = Thunder* Tempest*
-	- (Mage -> Lighting/Elementalist) = Archmage* Networker* Archetype* (Can have summon?)
+	- (Mage -> Support/Lighting) = Netrunner
+	- (Mage -> Lighting/Physical) = Thunder* Tempest* (last point: heal when attacking)
+	- (Mage -> Lighting/Elementalist) = Archmage* Archetype*
