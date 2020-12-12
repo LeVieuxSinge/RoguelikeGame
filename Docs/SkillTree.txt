@@ -11,7 +11,7 @@ Skill Tree documentation and ideas.
 - Unlock Signature card each time you defeat the final boss
 - Signature Card Idea:
 	- Pugilist (Unarmed) -> Tier 2 Warrior
-	- Hacker (Control/Confusion) -> Tier 3 Mage (Corrupted Mind: jump in the air and hack every enemy in an area, cannot move, hacked enemys attack non-hack enemy and take damage while hacked)
+	- Hacker (Control/Confusion) -> Tier 3 Mage (Corrupted Mind: jump in the air and hack every enemy in an area, cannot move, hacked enemys attack non-hack enemy and take damage while hacked, wires)
 	- Vagrant (Rarity/Money/Store Refresh) -> Tier 2 Rogue
 	- Sewer Guy (Virus) -> Tier 3 Rogue
 	- Goliath (Bigger Size)
@@ -47,5 +47,5 @@ Skill Tree documentation and ideas.
 	- (Mage -> Support/Physical) = Angel
 	- (Mage -> Support/Elementalist) = Sorcerer* Debuf* Warlock*
 	- (Mage -> Support/Lighting) = Netrunner
-	- (Mage -> Lighting/Physical) = Thunder* Tempest* (last point: heal when attacking)
+	- (Mage -> Lighting/Physical) = Thunder* Tempest*
 	- (Mage -> Lighting/Elementalist) = Archmage* Archetype*

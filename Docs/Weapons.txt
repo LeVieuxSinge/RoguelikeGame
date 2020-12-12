@@ -2,18 +2,39 @@ Weapons documentation and ideas.
 
 - 2 to 4 modifiers for one hand
 - 3 to 5 modifiers for two hands
+
+- Weapons have innate stats (3x stronger on two hands)
+	- Damage Type
+	- Speed / Damage
+
+- Weapon Type :
+	- Dagger
+	- Spear (2Hand)
+	- Sword
+	- Katana (2Hand)
+	- Mace
+	- Club (2Hand)
+	- Handgun
+	- Bow (2Hand)
+	- Wand
+	- Staff (2Hand)
+	- Shield
+
+- Damage Type :
+	- Slash
+	- Bash
+	- Stab
+	- Projectile
+	- Area of Effect
+
 - Modifiers are grouped in little clusters (ex. Burning includes Fire Damage, Ignite Chance, Ignite Damage, Ignite Duration)
-    - Burning
-    - Lucky
-- Weapons have an innate damage (3x stronger on two hands)
-    - Attack (Slash, Bash, Pierce)
-    - Spell (Projectile, Area)
-- One hand spells alternate weapon on animation
+	- Burning
+	- Lucky
 
 - When weapon is spawn :
-	- Choose Weapon Type (Sword, Mace, Wand ...)
-	- Choose Elemental Type (Fire, Ice ...)
-	- Choose Damage Type (Slash, Bash ...)
+	- Choose Weapon Type
+	- Choose Elemental Type (Physical, Fire, Freeze, Eletric)
+	- Choose Damage Type
 	- Choose Attack/Spell ability according to Elemental and Damage Type
 
 - Weapon Structure
@@ -21,7 +42,91 @@ Weapons documentation and ideas.
 	- Name
 	- Tier
 	- Damage Type (innate)
-	- 1 elemental modifier (innate)
+	- 1 elemental type (innate)
 	- 1 to 3 additionnal modifiers for one hand (2 to 4 for two hand)
+	- 1 unique modifier (unique)
 	- Ability
-	- Description / Quote (Legendary)
+	- Description / Quote (unique)
+
+- Unique Items
+	- Hammer
+		- Bash
+		- AOE
+		- Modifier : Increase AOE damage based on resists
+		- Ability : Bash attack that causes arc eletric damage to a few enemies and cause crater on ground, killed enemies leave health regen zone
+
+	- Armor
+		- Resist
+		- Health
+		- Modifier : Double health but take double damage
+		- Modifier : Increase Health regen based on missing health
+		- Ability : None
+
+	- 2Hand
+		- Slash
+		- Modifier : Huge Boss damage
+		- Ability : Slow attack, removes enemy armor for a short time
+
+	- Armor
+		- Evasion Chance
+		- Movement Speed
+		- Modifier : Increase luck
+		- Ability : TBD
+
+	- 2Hand
+		- Bash
+		- Modifier : Increase base elemental damage
+		- Ability : Combo attack with 3 elements (strike, swing, smash)
+
+	- Armor
+		- Damage overtime
+		- Modifier : Apply double lag stack
+		- Ability : Put all surorunding enemies to at least 5 lag stacks
+
+	- Dagger
+		- Criit
+		- Modifier : Huge Crit Damage
+		- Ability : Stab an enemy, the more % health an enemy has, the more crit damage
+
+	- Boots
+		- Speed
+		- Modifier : Based movement speed
+		- Modifier : Increases physical damage based on additional movement speed
+		- Ability : Movement speed boost + ghost
+
+	- Bow
+		- Freeze damage
+		- Modifier : + 2 projectiles
+		- Ability : Shoots two arrow back à back
+
+	- Handgun
+		- Speed
+		- Modifier : Each cast sends a random bouncing bullet
+		- Ability : Random bullets now focus a target for 5 seconds
+
+	- Shield
+		- Resist
+		- Modifier : Increase healing effectiveness
+		- Ability : Buff party member with resists for 10 seconds
+
+	- Boots
+		- Health
+		- Resits
+		- Modifier : Cap movement speed to base but increase elemental damage
+		- Ability : Teleport
+
+	- Boots
+		- Speed
+		- Modifier : Based movement speed
+		- Modifier : Dealing electric damage gives burst of movement speed
+		- Ability : Set a point to teleport back after a few seconds
+
+	- 2Hand
+		- Eletric damage
+		- Modifier : Increase technology damage based on active technology
+		- Ability : Passive, staff AI
+
+	- Armor
+		- Resists
+		- Modifier : Dealing 4 different elemental damage on an enemy reduces its elemental resists
+		- Ability : Cooldown, Heals you for % health when you reach under 30% health
