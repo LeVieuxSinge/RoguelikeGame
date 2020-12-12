@@ -48,7 +48,7 @@ Weapons documentation and ideas.
 	- Ability
 	- Description / Quote (unique)
 
-- Unique Items
+- Unique Class Items
 	- Hammer
 		- Bash
 		- AOE
@@ -130,3 +130,29 @@ Weapons documentation and ideas.
 		- Resists
 		- Modifier : Dealing 4 different elemental damage on an enemy reduces its elemental resists
 		- Ability : Cooldown, Heals you for % health when you reach under 30% health
+
+- Unique Items
+	- Wand
+		- Electric
+		- Modifier : + 1 static target
+		- Ability : Bzz
+
+	- Mittens (Freeze)
+		- Freeze Resist + damage
+		- Modifer : Cannot receive lag
+		- Ability : Unarmed attack freeze damage
+
+	- Mittens (Fire)
+		- Fire Resist + damage
+		- Modifer : Cannot be ingited
+		- Ability : Unarmed attack fire damage
+
+	- Mittens (Eletric)
+		- Electric Resist + damage
+		- Modifer : Cannot static
+		- Ability : Unarmed attack electric damage
+
+	- Knuckles
+		- Unarmed and Physical damage
+		- Modifer : Unarmed shit
+		- Ability : Unarmed attack unarmed damage
