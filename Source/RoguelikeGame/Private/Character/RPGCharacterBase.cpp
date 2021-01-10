@@ -266,7 +266,7 @@ float ARPGCharacterBase::GetMaxHealth() const
 
 void ARPGCharacterBase::CalculateMaxHealth()
 {
-	AttributeSet->SetMaxHealth(((AttributeSet->GetMaxHealth_Initial() * AttributeSet->GetMaxHealth_Initial_Multiplier()) + AttributeSet->GetMaxHealth_Flat_Additive()) * (1.f + AttributeSet->GetMaxHealth_Increase_Multiplier()) * AttributeSet->GetMaxHealth_Exponential_Multiplier());
+	AttributeSet->SetMaxHealth(((AttributeSet->GetMaxHealth_Initial() * AttributeSet->GetMaxHealth_Initial_Multiplier()) + AttributeSet->GetMaxHealth_Flat_Additive()) * (1.f + AttributeSet->GetMaxHealth_Additive_Multiplier()) * AttributeSet->GetMaxHealth_Multiplicative_Multiplier());
 }
 
 
